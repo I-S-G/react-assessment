@@ -1,11 +1,17 @@
+import { useContext } from "react";
+
+import { CounterContext } from "../context/counter.context";
+
 const Child = () => {
   const handleMinusClick = () => {
-    /* Implement logic here */
+    setCount((count) => count - 1);
   };
 
   const handlePlusClick = () => {
-    /* Implement logic here */
+    setCount((count) => count + 1);
   };
+
+  const { setCount } = useContext(CounterContext);
 
   return (
     <div>
