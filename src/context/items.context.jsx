@@ -2,10 +2,10 @@ import { createContext, useState, useEffect } from "react";
 
 export const ItemsContext = createContext({
     items: [],
-    setItems: () => null,
-    addItem: () => null,
-    removeItem: () => null,
-    toggleCheck: () => null,
+    setItems: () => {},
+    addItem: () => {},
+    removeItem: () => {},
+    toggleCheck: () => {},
 });
 
 export const ItemsProvider = ({children}) => {
