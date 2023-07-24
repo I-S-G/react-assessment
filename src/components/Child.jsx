@@ -3,6 +3,9 @@ import { useContext } from "react";
 import { CounterContext } from "../context/counter.context";
 
 const Child = () => {
+
+  const { setCount } = useContext(CounterContext);
+
   const handleMinusClick = () => {
     setCount((count) => count - 1);
   };
@@ -10,8 +13,6 @@ const Child = () => {
   const handlePlusClick = () => {
     setCount((count) => count + 1);
   };
-
-  const { setCount } = useContext(CounterContext);
 
   return (
     <div>
