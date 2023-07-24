@@ -40,7 +40,6 @@ function App() {
         <button className="v__button" onClick={handleSubmit} disabled = {!name.length} >Add</button>
       </div>
       <div className="v__list-container overflow-y-scroll">
-        {/* Map your data here: */}
         {
           items.map((item) => <ShoppingListItem item = {item} key = {item.name} />)
         }
